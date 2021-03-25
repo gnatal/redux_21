@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "name": "jackson dourado",
+      "email": "jackson@email.com",
+      "age": 35
+    },
+    {
+      "id": 1,
+      "name": "guilherme natal",
+      "email": "jackson@email.com",
+      "age": 35
+    },
+    {
+      "id": 2,
+      "name": "jackson amarelado",
+      "email": "amarelado@email.com",
+      "age": 35
+    },
+    {
+      "id": 3,
+      "name": "jackson prateado",
+      "email": "prateado@email.com",
+      "age": 35
+    }
+  ]
+}
