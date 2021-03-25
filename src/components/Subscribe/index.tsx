@@ -27,13 +27,13 @@ const Subscribe: React.FC = () => {
         <div>
             <h2 style={{ width: "90vw", margin: "10px auto" }}>Cadastre um novo Aluno</h2>
             <StyledForm ref={formRef} onSubmit={handleSubmit}>
-                <InputLabel>name</InputLabel>
-                <StyledInput name="name" />
+                <InputLabel >name</InputLabel>
+                <StyledInput placeholder={"insira seu nome"} name="name" />
                 <InputLabel>email</InputLabel>
-                <StyledInput name="email" />
+                <StyledInput placeholder={"insira seu email"} name="email" />
                 <InputLabel>age</InputLabel>
-                <StyledInput name="age" />
-                <Button style={{ margin: "10px", display: "block" }} type={"submit"}>Enviar</Button>
+                <StyledInput placeholder={"insira sua idade"} name="age" />
+                <Button style={{ margin: "2px", display: "block" }} type={"submit"}>Enviar</Button>
             </StyledForm>
         </div>
     );

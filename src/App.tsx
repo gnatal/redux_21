@@ -5,16 +5,17 @@ import AboutUs from './components/AboutUs'
 import Home from './components/Home'
 import Subscribe from './components/Subscribe'
 import store from './store'
-
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App: React.FC = () => {
   return (
     <>
       <Provider store={store}>
         <Home />
-        <Subscribe />
+        {/* <Subscribe /> */}
         <AboutUs />
+        <ToastContainer />
       </Provider>
     </>
   );

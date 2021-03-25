@@ -6,3 +6,10 @@ export function addNewUser(user: IUser) {
     payload: { user },
   }
 }
+
+export function setAllUsers(users: IUser[]) {
+  return {
+    type: 'SET_ALL_USERS',
+    payload: { users },
+  }
+}

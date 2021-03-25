@@ -23,6 +23,24 @@
       "name": "jackson prateado",
       "email": "prateado@email.com",
       "age": 35
+    },
+    {
+      "name": "Guilherme Natal",
+      "email": "guilherme_vrn@hotmail.com",
+      "age": "dsa",
+      "id": 4
+    },
+    {
+      "name": "Guilherme Natal",
+      "email": "guilherme_vrn@hotmail.com",
+      "age": "12321",
+      "id": 5
+    },
+    {
+      "name": "Guilherme Natal",
+      "email": "andressamc18@gmail.com",
+      "age": "12",
+      "id": 6
     }
   ]
 }

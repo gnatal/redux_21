@@ -14,6 +14,10 @@ const AllUsers: Reducer<IGlobalState | any> = (
       const { user } = action.payload
       return { ...state, users: [...state.users, user] }
 
+    case 'SET_ALL_USERS':
+      const { users } = action.payload
+      return { ...state, users: [...state.users, users] }
+
     default:
       return { ...state }
   }

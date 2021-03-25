@@ -10,9 +10,9 @@ export const StyledForm = styled(Unform)`
 
 export const StyledInput = styled(Input)`
   display: inline-block;
-  margin: 10px;
+  margin: 2px;
 `
 export const InputLabel = styled.p`
-  margin: 10px;
+  margin: 2px;
   font-weight: bold;
 `
