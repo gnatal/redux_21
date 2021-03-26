@@ -3,9 +3,9 @@ import api from '../../service/api'
 import { IUser } from '../../store/modules/user/types'
 import { useDispatch } from 'react-redux';
 import { addNewUser, setAllUsers } from '../../store/modules/user/actions'
-import { StudentCard, StudentField, StudentData, AddButton, HomeTitle } from './style'
-import ListGroup from 'react-bootstrap/ListGroup'
+import { StudentCard, StudentField, PrettyInput, HomeTitle, PrettyForm } from './style'
 import { ToastContainer, toast } from 'react-toastify';
+import Button from 'react-bootstrap/Button'
 
 const Home: React.FC = () => {
 
@@ -54,25 +54,24 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            <HomeTitle>
-                <h3 style={{ margin: "10px" }}>Alunos cadastrados em nosso sistema</h3>
-            </HomeTitle>
             {/* <button onClick={() => toast.success("ok")}>Toast</button> */}
             <div>
-                <form onSubmit={handleSubmit}>
-                    <input type={"text"} value={name} onChange={(e) => setName(e.target.value)} placeholder={"seu nome"} name="name"></input>
-                    <input type={"text"} value={email} onChange={(e) => setEmail(e.target.value)} placeholder={"seu email"} name="email"></input>
-                    <input type={"number"} value={age} onChange={(e) => setAge(e.target.value)} placeholder={"sua idade"} name="age"></input>
-                    <button type="submit">Cadastrar</button>
-                </form>
+                <PrettyForm onSubmit={handleSubmit}>
+                    <h2 style={{ color: "#f0f0f0", fontStyle: "italic" }}>Cadastre um aluno na accenture</h2>
 
-                <div>
+                    <PrettyInput type={"text"} value={name} onChange={(e) => setName(e.target.value)} placeholder={"seu nome"} name="name" />
+                    <PrettyInput type={"text"} value={email} onChange={(e) => setEmail(e.target.value)} placeholder={"seu email"} name="email" />
+                    <PrettyInput type={"number"} value={age} onChange={(e) => setAge(e.target.value)} placeholder={"sua idade"} name="age" />
+                    <Button type="submit">Cadastrar</Button>
+                </PrettyForm>
+
+                {/* <div>
                     {allUsers.map((user, index) => (
                         <div key={index}>
                             <h2>{user.name}</h2>
                         </div>
                     ))}
-                </div>
+                </div> */}
 
                 {/* {users.map((user) =>
                 (
