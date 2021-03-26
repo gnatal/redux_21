@@ -6,6 +6,7 @@ import { addNewUser, setAllUsers } from '../../store/modules/user/actions'
 import { StudentCard, StudentField, PrettyInput, HomeTitle, PrettyForm } from './style'
 import { ToastContainer, toast } from 'react-toastify';
 import Button from 'react-bootstrap/Button'
+import Table from 'react-bootstrap/Table';
 
 const Home: React.FC = () => {
 
@@ -65,13 +66,26 @@ const Home: React.FC = () => {
                     <Button type="submit">Cadastrar</Button>
                 </PrettyForm>
 
-                {/* <div>
-                    {allUsers.map((user, index) => (
-                        <div key={index}>
-                            <h2>{user.name}</h2>
-                        </div>
-                    ))}
-                </div> */}
+                <Table striped bordered hover style={{ width: "90vw", margin: "10px auto" }} >
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {allUsers.map((user, index) => (
+                            <tr key={index}>
+                                <td>{index}</td>
+                                <td>{user.name}</td>
+                                <td>{user.email}</td>
+                                <td>{user.age}</td>
+                            </tr>))}
+                    </tbody>
+
+                </Table>
 
                 {/* {users.map((user) =>
                 (
